@@ -1,0 +1,94 @@
+﻿---
+---
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  background-color: #0d1117;
+  color: #00ff00;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 1.6;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: #00ff00;
+  color: #0d1117;
+}
+
+.container {
+  padding: 20px;
+}
+
+header h1 a {
+  color: #00ff00;
+  text-decoration: none;
+}
+
+header h1 a:hover {
+  background: none;
+  text-decoration: none;
+}
+
+.lead {
+  color: #00cc00;
+  font-size: 1.1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #00ff00;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 15px;
+}
+
+.post-meta {
+  color: #00cc00;
+  font-size: 0.9em;
+}
+
+.post-link {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 1px solid #003300;
+  color: #00aa00;
+  font-size: 0.9em;
+}
+
+.page {
+  margin-top: 20px;
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: #ffffff;
+    color: #333333;
+  }
+  a { color: #006600; }
+  h1, h2, h3, h4, h5, h6 { color: #006600; }
+  .lead, .post-meta { color: #666666; }
+  footer { border-top-color: #cccccc; color: #666666; }
+}
