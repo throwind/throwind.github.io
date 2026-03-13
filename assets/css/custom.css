@@ -1,0 +1,268 @@
+/* 自定义样式 - 让博客更现代漂亮 */
+
+/* 全局优化 */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.8;
+  color: #333;
+}
+
+/* 优化链接样式 */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+/* 优化标题 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #2c3e50;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.75em; }
+
+/* 优化引用块 */
+blockquote {
+  border-left: 4px solid #3498db;
+  padding-left: 1.5em;
+  margin: 2em 0;
+  color: #666;
+  font-style: italic;
+  background: #f8f9fa;
+  padding: 1em 1.5em;
+  border-radius: 0 8px 8px 0;
+}
+
+/* 优化代码块 */
+pre, code {
+  background: #f6f8fa;
+  border-radius: 6px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+pre {
+  padding: 1.5em;
+  overflow-x: auto;
+  border: 1px solid #e1e4e8;
+}
+
+code {
+  padding: 0.2em 0.4em;
+  font-size: 0.9em;
+}
+
+/* 优化表格 */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 2em 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+table th, table td {
+  padding: 1em;
+  text-align: left;
+  border-bottom: 1px solid #e1e4e8;
+}
+
+table th {
+  background: #3498db;
+  color: white;
+  font-weight: 600;
+}
+
+table tr:hover {
+  background: #f5f6fa;
+}
+
+/* 优化列表 */
+ul, ol {
+  padding-left: 2em;
+  margin: 1.5em 0;
+}
+
+li {
+  margin: 0.5em 0;
+}
+
+/* 优化图片 */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  margin: 2em 0;
+}
+
+/* 优化分割线 */
+hr {
+  border: none;
+  border-top: 2px solid #e1e4e8;
+  margin: 3em 0;
+}
+
+/* 优化按钮 */
+.button, button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.8em 2em;
+  border-radius: 6px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.button:hover, button:hover {
+  background: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* 优化导航 */
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 1.5em;
+}
+
+/* 优化页脚 */
+footer {
+  margin-top: 4em;
+  padding: 2em 0;
+  border-top: 1px solid #e1e4e8;
+  text-align: center;
+  color: #666;
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  h1 { font-size: 2em; }
+  h2 { font-size: 1.75em; }
+  h3 { font-size: 1.5em; }
+  
+  blockquote {
+    margin: 1.5em 0;
+    padding: 1em;
+  }
+  
+  pre {
+    padding: 1em;
+    font-size: 0.9em;
+  }
+}
+
+/* 文章列表优化 */
+.post-list {
+  list-style: none;
+  padding: 0;
+}
+
+.post-list li {
+  margin: 2em 0;
+  padding: 1.5em;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.post-list li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+}
+
+.post-meta {
+  color: #999;
+  font-size: 0.9em;
+  margin-bottom: 0.5em;
+}
+
+.post-title {
+  font-size: 1.5em;
+  margin: 0.5em 0;
+}
+
+.post-excerpt {
+  color: #666;
+  line-height: 1.6;
+}
+
+/* 标签优化 */
+.tags {
+  margin-top: 1em;
+}
+
+.tag {
+  display: inline-block;
+  background: #e1e4e8;
+  color: #555;
+  padding: 0.3em 0.8em;
+  border-radius: 20px;
+  font-size: 0.85em;
+  margin-right: 0.5em;
+  margin-bottom: 0.5em;
+  transition: all 0.3s ease;
+}
+
+.tag:hover {
+  background: #3498db;
+  color: white;
+}
+
+/* 深色模式支持 */
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #1a1a2e;
+    color: #eee;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+  
+  blockquote {
+    background: #16213e;
+    border-left-color: #3498db;
+    color: #aaa;
+  }
+  
+  pre, code {
+    background: #0f3460;
+    color: #eee;
+  }
+  
+  table th {
+    background: #0f3460;
+  }
+  
+  table tr:hover {
+    background: #16213e;
+  }
+  
+  .post-list li {
+    background: #16213e;
+  }
+  
+  .tag {
+    background: #0f3460;
+    color: #aaa;
+  }
+}

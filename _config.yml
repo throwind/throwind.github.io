@@ -28,6 +28,20 @@ remote_theme: chrisbobbe/jekyll-theme-prologue@v0.1.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
+# Custom CSS
+sass:
+  sass_dir: assets/css
+  style: compressed
+
+# SEO and Social Sharing
+twitter:
+  username: throwind
+social:
+  name: throwind
+  links:
+    - https://github.com/throwind
+    - https://twitter.com/throwind
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
