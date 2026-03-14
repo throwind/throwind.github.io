@@ -1,9 +1,7 @@
 ---
-layout: default
-title: Welcome
+layout: home
+title: 最新文章
 ---
-
-# 欢迎来到我的数字领地
 
 > 希望可以在这里保存我们小小的坚持
 
