@@ -28,3 +28,6 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
+# Override transitive dependencies with security fixes
+gem "activesupport", ">= 6.1.7.10"
+
