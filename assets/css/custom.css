@@ -1,10 +1,68 @@
 /* 自定义样式 - 让博客更现代漂亮 */
 
 /* 全局优化 */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   line-height: 1.8;
   color: #333;
+  background: #f5f6fa;
+}
+
+/* 站点布局 - 避免重叠 */
+.site-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2em;
+  background: white;
+  min-height: 100vh;
+}
+
+/* 页头 - 移除 fixed 定位，避免遮挡 */
+.site-header {
+  margin-bottom: 3em;
+  padding-bottom: 1.5em;
+  border-bottom: 2px solid #e1e4e8;
+  text-align: center;
+}
+
+.site-title {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.site-title a {
+  color: #2c3e50;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #3498db;
+}
+
+.site-description {
+  color: #666;
+  font-size: 1.1em;
+  font-style: italic;
+}
+
+/* 主内容区 */
+.site-main {
+  padding: 2em 0;
+}
+
+/* 页脚 */
+.site-footer {
+  margin-top: 4em;
+  padding-top: 2em;
+  border-top: 1px solid #e1e4e8;
+  text-align: center;
+  color: #666;
 }
 
 /* 优化链接样式 */

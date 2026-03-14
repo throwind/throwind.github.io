@@ -4,23 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ page.title | default: site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 </head>
 <body>
-  <div class="container">
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
+  <div class="site-wrapper">
+    <header class="site-header">
+      <h1 class="site-title"><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
       {% if site.description %}
-      <p class="lead">{{ site.description }}</p>
+      <p class="site-description">{{ site.description }}</p>
       {% endif %}
     </header>
     
-    <main>
+    <main class="site-main">
       {{ content }}
     </main>
 
-    <footer>
-      <p>&copy; {{ site.time | date: '%Y' }} {{ site.email }}</p>
+    <footer class="site-footer">
+      <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}</p>
     </footer>
   </div>
 </body>
